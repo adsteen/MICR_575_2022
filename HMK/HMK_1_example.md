@@ -23,22 +23,16 @@ italicized and boldface text, and a bulleted or numbered list.
 ## Code
 
 Your document should also have some R code that has executed properly,
-like below.
+like below. However, you **must** change the default code that R creates
+when you create a new Quarto document!
+
+I changed the code from `1 + 1` to `2 + 2`.
 
 ``` r
-1 + 1
+2 + 2
 ```
 
-    [1] 2
-
-``` r
-system.time({
-  Sys.sleep(10)
-})
-```
-
-       user  system elapsed 
-      0.000   0.000  10.001 
+    [1] 4
 
 For this assignment, you don’t need to do anything fancy with your code.
 However, I’m feeling saucy, so I decided to put a plot into my quarto
@@ -46,12 +40,9 @@ document:
 
 ``` r
 library(tidyverse) # loads the packages we need 
-```
-
-``` r
 p <- ggplot(mtcars, aes(x=mpg, y=disp)) +
   geom_point()
 print(p)
 ```
 
-![](HMK_1_example_files/figure-gfm/unnamed-chunk-6-1.png)
+![](HMK_1_example_files/figure-gfm/unnamed-chunk-4-1.png)
